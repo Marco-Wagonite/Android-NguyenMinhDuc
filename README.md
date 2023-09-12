@@ -1,1 +1,1 @@
-# Android-NguyenMinhDuc
+# Android School Project
