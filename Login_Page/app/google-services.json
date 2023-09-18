@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "219186572859",
+    "project_id": "login-page-b4782",
+    "storage_bucket": "login-page-b4782.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219186572859:android:1efc5df44134748e85361e",
+        "android_client_info": {
+          "package_name": "com.uef.login_page"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkpRssKBvYz6GuBCuSV4vVjXjl8i6gp0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
