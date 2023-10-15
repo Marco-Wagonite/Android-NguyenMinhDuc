@@ -4,32 +4,40 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import java.util.Stack;
 
+import java.util.Stack;
+
 public class GameStateManager {
+    // Stack to manage game states
+    private Stack<States> states;
 
-    private Stack<State> states;
-
-    public GameStateManager(){
-        states = new Stack<State>();
+    // Constructor to initialize the game state manager
+    public GameStateManager() {
+        states = new Stack<States>();
     }
 
-    public void push(State state){
+    // Push a new game state onto the stack
+    public void push(States state) {
         states.push(state);
     }
 
-    public void pop(){
-        states.pop().dispose();
+    // Pop the current game state from the stack
+    public void pop() {
+        states.pop();
     }
 
-    public void set(State state){
-        states.pop().dispose();
+    // Set the current game state by popping the previous state and pushing a new one
+    public void set(States state) {
+        states.pop();
         states.push(state);
     }
 
-    public void update(float dt){
+    // Update the current game state with a time delta
+    public void update(float dt) {
         states.peek().update(dt);
     }
 
-    public void render(SpriteBatch sb){
+    // Render the current game state using a SpriteBatch
+    public void render(SpriteBatch sb) {
         states.peek().render(sb);
     }
 }

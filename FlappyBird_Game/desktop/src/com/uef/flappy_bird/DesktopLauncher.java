@@ -8,7 +8,6 @@ import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
-		config.setForegroundFPS(60);
 		config.setTitle(Flappy_Bird.TITLE);
 		config.setWindowedMode(Flappy_Bird.WIDTH, Flappy_Bird.HEIGHT);
 
